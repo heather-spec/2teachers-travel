@@ -307,6 +307,30 @@ const Home: React.FC = () => {
            </div>
         </div>
       </section>
+
+      {/* Next Steps CTA */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="bg-inkNavy rounded-[2.5rem] px-8 py-16 md:px-16 md:py-24 text-center shadow-2xl relative overflow-hidden">
+            {/* Subtle glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-transparent rounded-[2.5rem]"></div>
+            <div className="relative z-10">
+              <span className="text-white/50 font-black uppercase tracking-[0.3em] text-[10px] mb-6 inline-block px-4 py-1.5 border border-white/10 rounded-full bg-white/5">
+                Next Steps
+              </span>
+              <h2 className="font-sans font-extrabold text-3xl md:text-5xl text-white mb-6 tracking-tight leading-tight">
+                Ready to start planning?
+              </h2>
+              <p className="text-white/60 text-lg md:text-xl font-medium max-w-xl mx-auto mb-10 leading-relaxed">
+                We'll build a custom itinerary and budget proposal for your school in 48 hours. No pressure, just a better way to travel.
+              </p>
+              <Link to="/contact" className="inline-block bg-brass text-white px-10 py-5 rounded-full font-black text-lg md:text-xl shadow-xl shadow-brass/30 hover:scale-105 transition-transform">
+                Request a Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
