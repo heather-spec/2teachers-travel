@@ -11,14 +11,32 @@ const Contact: React.FC = () => {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate email sending
-    setTimeout(() => {
-      setSubmitted(true);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 1000);
+    setSubmitting(true);
+    try {
+      const res = await fetch('https://formspree.io/f/mnjbqqlo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          school: formData.school,
+          email: formData.email,
+          tripType: formData.tripType,
+          message: formData.message,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    } catch (err) {
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -146,11 +164,12 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="pt-4 flex justify-end">
-                  <button 
-                    type="submit" 
-                    className="bg-brass text-white px-12 py-5 rounded-full font-black text-xl hover:bg-inkNavy transition-all shadow-xl shadow-brass/20 transform hover:-translate-y-1"
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="bg-brass text-white px-12 py-5 rounded-full font-black text-xl hover:bg-inkNavy transition-all shadow-xl shadow-brass/20 transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Request Quote
+                    {submitting ? 'Sending...' : 'Request Quote'}
                   </button>
                 </div>
               </form>
