@@ -179,7 +179,7 @@ const SchoolTrips: React.FC = () => {
 
             {/* New Requested Image */}
             <div className="mt-16 rounded-3xl overflow-hidden shadow-2xl">
-              <img src="https://i.imgur.com/krLimbb.jpeg" alt="Planning details visual" className="w-full h-auto" />
+              <img src="https://i.imgur.com/krLimbb.jpeg" alt="Planning details visual" className="w-full h-auto" width="1200" height="675" />
             </div>
 
             <div className="mt-12 text-center">
@@ -196,7 +196,7 @@ const SchoolTrips: React.FC = () => {
             </AnswerBox>
             <div className="grid md:grid-cols-2 gap-8 mt-8">
               <div className="bg-forest/5 p-8 rounded-xl border border-forest/10">
-                <h4 className="font-bold text-forest mb-4 uppercase text-sm tracking-widest">Our Responsibility</h4>
+                <h3 className="font-bold text-forest mb-4 uppercase text-sm tracking-widest">Our Responsibility</h3>
                 <ul className="space-y-3 text-sm">
                   <li>• Itinerary design & museum bookings</li>
                   <li>• Transportation (FMCSA-vetted buses)</li>
@@ -206,7 +206,7 @@ const SchoolTrips: React.FC = () => {
                 </ul>
               </div>
               <div className="bg-slate/5 p-8 rounded-xl border border-slate/10">
-                <h4 className="font-bold text-slate mb-4 uppercase text-sm tracking-widest">School Responsibility</h4>
+                <h3 className="font-bold text-slate mb-4 uppercase text-sm tracking-widest">School Responsibility</h3>
                 <ul className="space-y-3 text-sm">
                   <li>• Administrative/Board approvals</li>
                   <li>• Student behavior</li>
@@ -224,18 +224,18 @@ const SchoolTrips: React.FC = () => {
             </AnswerBox>
             <div className="mt-8 grid md:grid-cols-3 gap-6">
               <div className="p-6 bg-white border border-inkNavy/5 rounded-lg text-center shadow-sm">
-                <h4 className="font-bold text-inkNavy mb-2">Essentials Tier</h4>
+                <h3 className="font-bold text-inkNavy mb-2">Essentials Tier</h3>
                 <p className="text-xs text-slate mb-4">Focus on core monuments & museums with budget-conscious lodging.</p>
                 <p className="font-serif font-bold text-brass text-lg">Value Optimized</p>
               </div>
               <div className="p-6 bg-white border-2 border-brass rounded-lg text-center shadow-md relative">
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brass text-inkNavy text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Most Popular</span>
-                <h4 className="font-bold text-inkNavy mb-2">Classic Experience</h4>
+                <h3 className="font-bold text-inkNavy mb-2">Classic Experience</h3>
                 <p className="text-xs text-slate mb-4">Includes guided evening tours, standard dining, and closer lodging.</p>
                 <p className="font-serif font-bold text-brass text-lg">Curriculum Deep-Dive</p>
               </div>
               <div className="p-6 bg-white border border-inkNavy/5 rounded-lg text-center shadow-sm">
-                <h4 className="font-bold text-inkNavy mb-2">Premium Discovery</h4>
+                <h3 className="font-bold text-inkNavy mb-2">Premium Discovery</h3>
                 <p className="text-xs text-slate mb-4">Includes theater tickets, premium meals, and prime hotel locations.</p>
                 <p className="font-serif font-bold text-brass text-lg">All-Inclusive</p>
               </div>
