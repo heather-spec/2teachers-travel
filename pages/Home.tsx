@@ -106,8 +106,8 @@ const Home: React.FC = () => {
                   <div className="space-y-4 mt-12">
                      <div className="aspect-[3/4] bg-slate-100 rounded-[2rem] overflow-hidden shadow-2xl border border-slate-100 transform -rotate-2 hover:rotate-0 transition-transform duration-500">
                         <img 
-                          src="https://i.imgur.com/IwUQR3i.jpg" 
-                          alt="René Offenberger" 
+                          src="https://i.imgur.com/8sG5wbc.jpg"
+                          alt="René Offenberger"
                           className="w-full h-full object-cover" 
                         />
                      </div>
@@ -252,7 +252,7 @@ const Home: React.FC = () => {
             <div className="bg-white p-8 rounded-2xl border border-inkNavy/10 shadow-xl">
               <h3 className="font-bold text-lg text-inkNavy mb-4">What's Included?</h3>
               <p className="text-slate text-sm leading-relaxed">
-                The cost of the trip covers motor coach transportation, hotel accommodations, and all items mentioned in the "What's Included" section of the specific tour page. Tips and meals provided as part of the itinerary are already included in the tour price. Travel insurance is not part of the package, but it can be purchased for 10% of the trip cost.
+                The cost of the trip covers motor coach transportation, hotel accommodations, and all items mentioned in the "What's Included" section of the specific tour page. Tips and meals provided as part of the itinerary are already included in the tour price. Cancellation coverage is not part of the package, but it can be purchased for 10% of the trip cost.
               </p>
             </div>
             

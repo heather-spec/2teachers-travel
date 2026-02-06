@@ -68,8 +68,8 @@ const WhyUs: React.FC = () => {
               <div className="">
                  <div className="bg-[#F9F7F2] aspect-[4/5] relative overflow-hidden rounded-[3rem] shadow-2xl group border border-slate-100">
                     <img 
-                      src="https://i.imgur.com/IwUQR3i.jpg" 
-                      alt="René Offenberger" 
+                      src="https://i.imgur.com/8sG5wbc.jpg"
+                      alt="René Offenberger"
                       className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-brass/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -113,7 +113,7 @@ const WhyUs: React.FC = () => {
                    <img src="https://i.imgur.com/e1MGz1l.jpg" alt="Jeane" className="w-full h-full object-cover grayscale" />
                 </div>
                 <div className="w-16 h-16 rounded-full border-4 border-white bg-slate-400 shadow-xl overflow-hidden">
-                   <img src="https://i.imgur.com/IwUQR3i.jpg" alt="René" className="w-full h-full object-cover grayscale" />
+                   <img src="https://i.imgur.com/8sG5wbc.jpg" alt="René" className="w-full h-full object-cover grayscale" />
                 </div>
              </div>
              <p className="font-black text-inkNavy text-xl tracking-tight">Jeane & René</p>

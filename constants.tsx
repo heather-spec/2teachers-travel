@@ -49,7 +49,7 @@ export const HOMEPAGE_FAQS: FaqItem[] = [
   },
   {
     question: "Is travel insurance included?",
-    answer: "Insurance is optional and can be purchased for 10% of the trip cost."
+    answer: "Cancellation coverage is optional, and can be purchased for 10% of the trip cost."
   },
   {
     question: "Can you help with parent communication?",
