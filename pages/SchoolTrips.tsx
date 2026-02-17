@@ -261,7 +261,7 @@ const SchoolTrips: React.FC = () => {
               <div className="bg-[#F9F7F2] p-8 rounded-3xl border border-inkNavy/5">
                 <h3 className="font-bold text-lg text-inkNavy mb-3">What's Included?</h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  The cost covers motor coach transportation, hotel accommodations, and all items mentioned in the "What's Included" section of the specific tour page. Tips and meals provided as part of the itinerary are already included in the tour price. Travel insurance is not part of the package, but it can be purchased for 10% of the trip cost.
+                  The cost covers motor coach transportation, hotel accommodations, and all items mentioned in the "What's Included" section of the specific tour page. Tips and meals provided as part of the itinerary are already included in the tour price. Standard pricing is non-refundable; refundable pricing is available for an additional 10% of the trip cost and must be selected at booking.
                 </p>
               </div>
               <div className="bg-[#F9F7F2] p-8 rounded-3xl border border-inkNavy/5">

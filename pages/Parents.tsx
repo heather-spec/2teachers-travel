@@ -72,7 +72,7 @@ const Parents: React.FC = () => {
           <div id="whats-included">
             <h2 className="font-sans font-extrabold text-4xl text-inkNavy mb-8 tracking-tight leading-tight">What’s included, and what’s not?</h2>
             <AnswerBox>
-              Trips typically include transportation, lodging, a structured educational itinerary, and on-site leadership. Optional travel insurance is available separately.
+              Trips typically include transportation, lodging, a structured educational itinerary, and on-site leadership. Refundable pricing (cancellation protection) is available for an additional 10% and must be selected at booking.
             </AnswerBox>
             <p className="text-slate leading-relaxed mt-4">
               Detailed itinerary packets are shared months in advance. We work to ensure most costs (meals, tickets, fees) are bundled to reduce student out-of-pocket needs.

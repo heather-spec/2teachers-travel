@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-xs font-bold uppercase tracking-widest">
               <li><Link to="/tour-info" className="hover:text-brass transition-colors">Tour Policies</Link></li>
               <li><Link to="/tour-info#payments" className="hover:text-brass transition-colors">Payment Schedule</Link></li>
-              <li><Link to="/tour-info#insurance" className="hover:text-brass transition-colors">Insurance Details</Link></li>
+              <li><Link to="/tour-info#insurance" className="hover:text-brass transition-colors">Cancellation Details</Link></li>
             </ul>
           </div>
 

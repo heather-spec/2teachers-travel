@@ -252,7 +252,7 @@ const Home: React.FC = () => {
             <div className="bg-white p-8 rounded-2xl border border-inkNavy/10 shadow-xl">
               <h3 className="font-bold text-lg text-inkNavy mb-4">What's Included?</h3>
               <p className="text-slate text-sm leading-relaxed">
-                The cost of the trip covers motor coach transportation, hotel accommodations, and all items mentioned in the "What's Included" section of the specific tour page. Tips and meals provided as part of the itinerary are already included in the tour price. Cancellation coverage is not part of the package, but it can be purchased for 10% of the trip cost.
+                The cost of the trip covers motor coach transportation, hotel accommodations, and all items mentioned in the "What's Included" section of the specific tour page. Tips and meals provided as part of the itinerary are already included in the tour price. Standard pricing is non-refundable; refundable pricing is available for an additional 10% of the trip cost and must be selected at booking.
               </p>
             </div>
             
@@ -294,11 +294,15 @@ const Home: React.FC = () => {
                    <span className="font-bold text-lg text-inkNavy pr-8">{faq.question}</span>
                    <span className={`text-brass font-bold text-2xl transition-transform ${activeFaq === idx ? 'rotate-45' : ''}`}>+</span>
                  </button>
-                 {activeFaq === idx && (
-                   <div className="p-6 pt-0 bg-white">
-                     <p className="text-slate text-lg leading-relaxed">{faq.answer}</p>
-                   </div>
-                 )}
+{activeFaq === idx && (
+                  <div className="p-6 pt-0 bg-white">
+                    {'answerNode' in faq && faq.answerNode ? (
+                      <div className="text-slate text-lg leading-relaxed space-y-2">{faq.answerNode}</div>
+                    ) : (
+                      <p className="text-slate text-lg leading-relaxed">{faq.answer}</p>
+                    )}
+                  </div>
+                )}
                </div>
              ))}
            </div>

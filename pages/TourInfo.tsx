@@ -7,7 +7,7 @@ const TourInfo: React.FC = () => {
   return (
     <Layout
       title="Tour Policies & Planning | 2 Teachers Travel"
-      description="Essential planning info: payment schedules, cancellation policies, and insurance. We make logistics easy for our Washington, DC tour company for schools."
+      description="Essential planning info: payment schedules, cancellation policies, and travel protection options. We make logistics easy for our Washington, DC tour company for schools."
     >
       <section className="bg-inkNavy pt-32 pb-20 text-white text-center relative overflow-hidden">
         {/* Flags Image - Fixed Z-Index */}
@@ -28,9 +28,9 @@ const TourInfo: React.FC = () => {
       <section className="py-20 container mx-auto px-4 max-w-4xl">
         <div className="space-y-16">
           <div id="insurance">
-            <h2 className="font-sans font-extrabold text-4xl text-inkNavy mb-8 tracking-tight leading-tight">Travel Insurance</h2>
+            <h2 className="font-sans font-extrabold text-4xl text-inkNavy mb-8 tracking-tight leading-tight">Cancellation Details</h2>
             <AnswerBox>
-              Optional travel insurance is available for 10% of the total trip cost. This coverage protects families against unforeseen circumstances that may prevent travel.
+              Travel Protection Option. Refundable pricing is available for an additional 10% of the total trip cost. This option allows families to cancel the trip for any reason prior to departure and receive a full refund. Standard pricing does not include cancellation protection and is non-refundable. Refundable pricing must be selected at the time of booking.
             </AnswerBox>
           </div>
 

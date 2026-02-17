@@ -63,7 +63,11 @@ const FAQs: React.FC = () => {
           {allFaqs.map((faq, idx) => (
             <div key={idx} className="bg-white p-8 rounded-xl border border-inkNavy/5 shadow-sm scroll-mt-24" id={`faq-${idx}`}>
               <h3 className="font-sans font-bold text-2xl text-inkNavy mb-4 tracking-tight">{faq.question}</h3>
-              <p className="text-slate leading-relaxed text-lg">{faq.answer}</p>
+              {'answerNode' in faq && faq.answerNode ? (
+                <div className="text-slate leading-relaxed text-lg space-y-2">{faq.answerNode}</div>
+              ) : (
+                <p className="text-slate leading-relaxed text-lg">{faq.answer}</p>
+              )}
             </div>
           ))}
         </div>

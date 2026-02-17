@@ -48,8 +48,16 @@ export const HOMEPAGE_FAQS: FaqItem[] = [
     answer: "Many schools plan 6–12 months ahead, but shorter timelines may be possible depending on availability."
   },
   {
-    question: "Is travel insurance included?",
-    answer: "Cancellation coverage is optional, and can be purchased for 10% of the trip cost."
+    question: "What is your cancellation and refund policy?",
+    answer: "We offer two pricing options: Standard Pricing is non-refundable if the student cancels. Refundable Pricing is available at 10% above the standard price and allows cancellation prior to departure with a full refund. The refundable option must be selected at booking and cannot be added later.",
+    answerNode: (
+      <>
+        <p className="mb-4">We offer two pricing options to give families flexibility when planning their trip.</p>
+        <p className="mb-2"><strong className="text-inkNavy">Standard Pricing:</strong> This option is non-refundable if the student cancels the trip for any reason.</p>
+        <p className="mb-2"><strong className="text-inkNavy">Refundable Pricing:</strong> This option is available at a cost of 10% above the standard price. Trips purchased under the refundable pricing plan may be canceled at any time prior to the trip's departure with no penalty and will receive a full refund.</p>
+        <p className="mt-4 text-slate-600 text-base"><strong>Note:</strong> The refundable pricing option must be selected at the time of booking and cannot be added later.</p>
+      </>
+    )
   },
   {
     question: "Can you help with parent communication?",
